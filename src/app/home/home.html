@@ -1,0 +1,46 @@
+<div>
+    <h2 class="page-title">Admin Home</h2>
+
+    <div class="jumbotron">
+        <div>
+            <p>
+                To start using Elite Schedule, configure your <a href="#/leagues">League</a> first. Once you select your league, you will configure
+                <span class="bold-text">Teams</span> and <span class="bold-text">Games</span> for your league.
+            </p>
+            <p>
+                <a href="#/locations">Locations</a> are shared across leagues.
+            </p>
+        </div>
+    </div>
+    <p>
+        <button class="btn btn-info" ng-click="vm.notesCollapsed = !vm.notesCollapsed"
+               popover="Click here for addtional information" popover-trigger="mouseenter">
+            Additional Notes
+        </button>
+    </p>
+    <div collapse="vm.notesCollapsed">
+        <div class="well in">
+            <h4>Helpful tips</h4>
+            <ul>
+                <li>Use the home tab to create helpful announcment for ....</li>
+                <li>Its good to canfiure locations early in the proccess..</li>
+                <li>After craeting hgames, you can alawayus go back and change...</li>
+            </ul>
+            
+            <h4>Screens:</h4>
+            <dl class="dl-horizontal">
+                <dd>Home</dd>
+                <dd>Basic Home screen</dd>
+                <dd>Leagues</dd>
+                <dd>This is your main stating point for configuration</dd>
+                <dd>Confiuration consists of : 
+                    <ol>
+                        <li>Home Screen</li>
+                        <li>Team</li>
+                        <li>Games</li>
+                    </ol>
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
